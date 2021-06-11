@@ -1,4 +1,4 @@
-ARDMK_DIR    = $(HOME)/electronics/Arduino-Makefile
+ARDMK_DIR    = Arduino-Makefile
 BOARD_TAG    = uno
 ARDUINO_LIBS = Wire
 
