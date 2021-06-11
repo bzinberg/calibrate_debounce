@@ -3,12 +3,14 @@
  *
  * Circuit
  * =======
+ * This program expects an Arduino-compatible board with internal pull-up
+ * resistors (i.e., digital pin mode `INPUT_PULLUP` supported), with the
+ * following connections:
  *
  *     Digital pin `kPinSwitch` ---- switch ---- ground
  *
  * How to use
  * ==========
- *
  * Slowly toggle the switch, and inspect the resulting serial printout.  I'd
  * recommend waiting at least 2 seconds between toggles.  (Printouts are held
  * in memory for 1 second before printing, so if the toggle time is less than
