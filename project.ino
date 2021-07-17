@@ -45,7 +45,7 @@ using MicrosTimestamp = decltype(micros());
 using MicrosTimeDelta = decltype((MicrosTimestamp)2 - (MicrosTimestamp)1);
 using DigitalPinState = decltype(LOW);
 
-constexpr uint8_t kPinSwitch = 2;
+constexpr uint8_t kPinSwitch = PIN_SWITCH;
 
 constexpr uint32_t kSteadyThresholdUsec = 1000000;
 DigitalPinState cur_streak_state;

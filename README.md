@@ -9,7 +9,10 @@ This program expects an Arduino-compatible board with internal pull-up
 resistors (i.e., digital pin mode `INPUT_PULLUP` supported), with the following
 connections:
 
-    Digital pin `kPinSwitch` ---- switch ---- ground
+    Digital pin `PIN_SWITCH` ---- switch ---- ground
+
+The pin number `PIN_SWITCH` defaults to 2, and can be configured via
+a build argument.
 
 ## How to build
 
@@ -22,6 +25,10 @@ I've never done this before, so you're on your own :-)
 If you are using an Arduino Uno–compatible board, simply run
 
     make
+
+or
+
+    make PIN_SWITCH=<digital pin number>
 
 to compile the program, and then
 
